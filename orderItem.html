@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order Item</title>
+    <link rel="stylesheet" href="orderItem.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="singUpImageDiv">
+            <img src="./iStock-10131071761-1.jpg" alt="" width="100%" height="100%">
+        </div>
+    
+        <form action="#">
+            
+            <div id="fromFild">
+            <header>SELECT YOUR FOOD FROM HERE</header>
+            <br>
+            <input type="search" name="LastName" class="Input"  placeholder="Search: i.e 'mutton' hit enter">
+            <br>   
+            <p class="or"> --OR-- </p>
+            <div class="slidecontainer">
+                <p id="put">put the price</p>
+                <input type="range" min="200" max="1000" value="150" class="slider" id="myRange">
+                <p><b>Price: </b><span id="demo"></span></p>
+              </div>
+            
+              <p class="or"> --OR-- </p>
+
+              <div class="upload-btn-wrapper">
+                <button class="btn">select a pic</button>
+                <input type="file" name="myfile">
+              </div>
+            
+            </div>
+            
+        </form>
+    </main>
+
+    <script>
+        let slider = document.getElementById("myRange");
+        let output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+</body>
+</html>

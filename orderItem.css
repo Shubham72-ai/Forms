@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    font-family: 'Muli', sans-serif;
+    color:  #5f6368;
+}
+
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    display: flex;
+    width: 910px;
+    height: 500px;
+    background-color: white; 
+}
+
+#singUpImageDiv {
+    height: 100%;
+    width: 50%;
+}
+
+form {
+    height: 100px;
+    width: 50%;
+    /* background-color: rgb(128, 79, 79); */
+    padding-left: 70px;
+    padding-top: 10%;
+    padding-bottom: -20px;
+}
+
+header {
+    font-weight: bolder;
+    margin-left: 10px;
+    
+}
+
+#put {
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.or {
+    margin-left: 150px;
+    font-style: italic;
+}
+.Input {
+    color:  #5f6368;
+    width: 70%;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 30px;
+    height: 40px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    /* font-family: 'Baloo Chettan 2', cursive; */
+    background-color: rgba(128, 128, 128, 0.089);
+}
+
+.Input:focus {
+    outline: none;
+}
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
